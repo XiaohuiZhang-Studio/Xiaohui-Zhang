@@ -2,10 +2,19 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Xiaohui Zhang</title>
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
 
@@ -16,10 +25,11 @@
     }
 
     body{
-      background:black;
-      color:white;
-      font-family:Arial, sans-serif;
+      background:#000;
+      color:#f5f5f5;
+      font-family:'Inter', sans-serif;
       overflow-x:hidden;
+      line-height:1.6;
     }
 
     section{
@@ -39,43 +49,74 @@
     }
 
     .hero h1{
-      font-size:80px;
+      font-size:56px;
       font-weight:300;
-      letter-spacing:2px;
-      margin-bottom:20px;
+      letter-spacing:1px;
+      margin-bottom:18px;
     }
 
     .hero p{
-      font-size:20px;
-      opacity:0.7;
+      font-size:15px;
+      opacity:0.6;
+      letter-spacing:1px;
+      text-transform:uppercase;
     }
 
-    /* WHO I AM */
+    /* PROFILE */
 
     .about{
       min-height:100vh;
       display:flex;
-      align-items:center;
       justify-content:space-between;
+      align-items:center;
       gap:80px;
+      border-top:1px solid rgba(255,255,255,0.08);
     }
 
     .about-text{
       flex:1;
+      max-width:720px;
     }
 
     .about-text h2{
-      font-size:18px;
-      margin-bottom:40px;
-      opacity:0.5;
+      font-size:12px;
+      font-weight:400;
       letter-spacing:3px;
       text-transform:uppercase;
+      opacity:0.4;
+      margin-bottom:40px;
     }
 
     .about-text p{
-      font-size:34px;
-      line-height:1.6;
+      font-size:22px;
       font-weight:300;
+      color:#d8d8d8;
+      line-height:1.9;
+      margin-bottom:40px;
+    }
+
+    .info{
+      margin-top:40px;
+    }
+
+    .info p{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      opacity:0.5;
+      margin-bottom:10px;
+    }
+
+    .info a{
+      color:white;
+      text-decoration:none;
+      font-size:15px;
+      opacity:0.8;
+      transition:0.3s;
+    }
+
+    .info a:hover{
+      opacity:1;
     }
 
     .about-image{
@@ -84,7 +125,7 @@
 
     .about-image img{
       width:100%;
-      height:700px;
+      height:720px;
       object-fit:cover;
       filter:grayscale(100%);
     }
@@ -93,16 +134,25 @@
 
     @media(max-width:900px){
 
+      section{
+        padding:80px 8%;
+      }
+
       .hero h1{
-        font-size:48px;
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:13px;
       }
 
       .about{
         flex-direction:column;
+        gap:60px;
       }
 
       .about-text p{
-        font-size:24px;
+        font-size:18px;
       }
 
       .about-image img{
@@ -112,6 +162,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -123,29 +174,43 @@
     <h1>Xiaohui Zhang</h1>
 
     <p>
-      Urban Research / Mapping / Informality
+      Landscape Architecture / Urban Research / Mapping
     </p>
 
   </section>
 
-  <!-- WHO I AM -->
+  <!-- PROFILE -->
 
   <section class="about">
 
     <div class="about-text">
 
-      <h2>Who I Am</h2>
+      <h2>Profile</h2>
 
       <p>
 
-        I work between urban research,
-        mapping, and spatial storytelling.
+        Xiaohui Zhang is a PhD researcher in Landscape Architecture,
+        Planning and Society at the University of Copenhagen.
 
-        My work focuses on informal public
-        performance spaces, migration,
-        and everyday negotiations in Chinese cities.
+        Her research explores informal public performance spaces,
+        migration, mapping, and everyday spatial negotiations in contemporary China.
+
+        Through fieldwork, visual archives, and spatial storytelling,
+        she investigates how marginalised groups reshape urban public life.
 
       </p>
+
+      <div class="info">
+
+        <p>ORCID</p>
+
+        <a href="https://orcid.org/0000-0002-2749-7219" target="_blank">
+
+          0000-0002-2749-7219
+
+        </a>
+
+      </div>
 
     </div>
 
